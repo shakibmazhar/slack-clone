@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    box-sizing: border-box;
+}
+/* Header Styles */
+.headerLeft,
+.headerRight {
+    flex: 0.3;
+}
+
+.headerMid {
+    flex: 0.4;
+}
+
+/* Home */
+.sidebar {
+    flex: 0.3;
+}
+
+.chat {
+    flex: 0.7;
+    scrollbar-width: 0;
+    -ms-overflow-style: none;
+}
+
+.chat::-webkit-scrollbar {
+    display: none;
+}
+
+.chat-container {
+    @apply overflow-scroll;
+    scrollbar-width: 0;
+    -ms-overflow-style: none;
+}
+
+.chat-container::-webkit-scrollbar {
+    display: none;
+}
